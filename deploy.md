@@ -56,7 +56,7 @@ Make sure your project files are committed to a GitHub repository.
 | `JWT_SECRET` | `super_secret_jwt_key_agentflow_ai_2026_secure` | Any random 32+ char secret |
 | `JWT_EXPIRES_IN` | `7d` | Token validity |
 | `CREDENTIAL_ENCRYPTION_KEY` | `0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef` | 32-byte hex encryption key |
-| `MONGODB_URI` | `mongodb+srv://reddyashish62_db_user:4tyIp1hvNdsJCV7f@agenticai.0iqicpo.mongodb.net/agentflow?retryWrites=true&w=majority&appName=AgenticAi` | Your MongoDB Atlas connection URI |
+| `MONGODB_URI` | `mongodb+srv://<db_username>:<db_password>@agenticai.0iqicpo.mongodb.net/agentflow?retryWrites=true&w=majority&appName=AgenticAi` | Your MongoDB Atlas connection URI |
 | `GEMINI_API_KEY` | `YOUR_GEMINI_API_KEY` | (Optional: for Google Gemini AI generation) |
 | `OPENROUTER_API_KEY` | `YOUR_OPENROUTER_API_KEY` | (Optional: for Claude 3.5 Sonnet generation) |
 | `CLIENT_URL` | `https://YOUR-VERCEL-FRONTEND-URL.vercel.app` | (Update this after deploying to Vercel in Step 3) |
