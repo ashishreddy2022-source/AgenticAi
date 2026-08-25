@@ -65,7 +65,18 @@ const authLimiter = rateLimit({
 });
 app.use('/api/auth', authLimiter);
 
-// 4. Health Check Endpoint
+// 4. Root & Health Check Endpoints
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'online',
+    platform: 'Agentflow AI Operations Automation Platform API',
+    version: '1.0.0',
+    message: 'Backend server is running smoothly. Access API endpoints under /api or view frontend application.',
+    healthCheck: '/api/health',
+    timestamp: new Date().toISOString()
+  });
+});
+
 app.get('/api/health', (req, res) => {
   res.status(200).json({
     status: 'healthy',
